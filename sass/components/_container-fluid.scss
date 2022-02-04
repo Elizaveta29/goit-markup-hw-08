@@ -1,0 +1,11 @@
+.container-fluid {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 15px;
+    background-color: var(--backgr-dark);
+    background-image: linear-gradient(var(--hero-gradient)), url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }

@@ -1,0 +1,49 @@
+.second-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--add-cl);
+    }
+  
+    
+  .hero__heading {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .form__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--add-cl);
+    margin-bottom: 12px;
+  }
+  
+  .team__second-heading {
+    margin-bottom: 50px;
+  }
+  
+  .activity__second-heading {
+    @extend .team__second-heading;
+  }
+  
+  .features__headings {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--add-cl);
+    margin-bottom: 10px;
+  }
+  
+  
+  .clients__second-heading {
+    @extend .team__second-heading;
+  }
+  
+  

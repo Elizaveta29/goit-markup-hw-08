@@ -10,6 +10,8 @@
   --card-border: #eeeeee;
   --bord-icon: #afb1b8;
   --footer-icon-bg: #ffffff1a;
+  --hero-gradient: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
+  --footer-text: rgba(255, 255, 255, 0.6);
   --home-bg-backdrop: rgba(0, 0, 0, 0.2);
   --activity-backdrop: rgba(47, 48, 58, 0.8);
   --team-modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -17,8 +19,18 @@
   --port-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   --homepage-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --standard-duration: 250ms;
+  --standard-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --input-placeholder: rgba(117, 117, 117, 0.5);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -32,8 +44,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* general settings */
-
 h1,
 h2,
 h3,
@@ -44,20 +54,17 @@ p {
   margin: 0;
 }
 
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 img {
   display: block;
   height: auto;
+  width: 100%;
   max-width: 100%;
 }
 
 .list {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .visually-hidden {
@@ -71,17 +78,34 @@ img {
   overflow: hidden;
 }
 
-
 textarea {
   resize: none;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .cardset {
@@ -226,9 +250,8 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
   background-color: var(--wh-cl);
+  min-width: 320px;
   box-shadow: var(--team-modal-shadow);
   border-radius: 4px;
   transition: scale var(--standard-animation), visibility var(--standard-animation);
@@ -236,6 +259,18 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
 }
 
 .modal__button {
@@ -343,6 +378,18 @@ textarea {
   padding: 12px 16px;
   margin-top: 4px;
   transition: border var(--standard-animation);
+}
+
+@media screen and (max-width: 479px) {
+  .form__comment {
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form__comment {
+    height: 120px;
+  }
 }
 
 .form__comment::placeholder {
@@ -543,16 +590,40 @@ textarea {
 }
 
 .features__list {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.features__list > .feature {
-  flex-basis: calc(100% / 4);
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features__item {
-  margin-right: 30px;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .features__icon {
@@ -561,7 +632,6 @@ textarea {
 }
 
 .features__container {
-  width: 270px;
   height: 120px;
   background-color: var(--alt-backgr);
   margin-bottom: 30px;
@@ -939,3 +1009,4 @@ textarea {
   fill: currentColor;
   transition: color var(--standard-animation);
 }
+/*# sourceMappingURL=main.css.map */

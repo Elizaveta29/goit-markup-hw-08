@@ -1,11 +1,28 @@
 .features__list {
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.features__list > .feature {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features__item {
-  margin-right: 30px;
+  max-width: 450px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .features__icon {
@@ -14,9 +31,11 @@
 }
 
 .features__container {
-  width: 270px;
   height: 120px;
   background-color: var(--alt-backgr);
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }

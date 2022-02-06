@@ -1,4 +1,15 @@
 .hero {
-    color: var(--wh-cl);
-    text-align: center;
-  }
+  color: var(--wh-cl);
+  text-align: center;
+}
+
+.hero__container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  padding: 118px 60px;
+  background-color: var(--backgr-dark);
+  background-image: linear-gradient(var(--hero-gradient)), url('../images/mobile/hero-mob-1x.jpg');
+  background-size: cover;
+  background-position: center;
+}

@@ -165,10 +165,10 @@
   }
 }
 
-.form__field:focus-within & {
-  border: 1px solid var(--accent-cl);
-  cursor: pointer;
-}
+// .form__field:focus-within & {
+//   border: 1px solid var(--accent-cl);
+//   cursor: pointer;
+// }
 
 .form__checkbox--relative {
   position: relative;

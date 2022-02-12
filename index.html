@@ -30,20 +30,9 @@
           </div>
 
           <button type="button" class="mobile-menu__button" aria-expanded="false" data-menu-button>
-            <svg
-              width="40px"
-              height="40px"
-              class="mobile-menu__icon"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="mobile-menu__open"
-                href="./images/icons/sprite-optimized.svg#menu-open"
-              ></use>
-              <use
-                class="mobile-menu__close"
-                href="./images/icons/sprite-optimized.svg#menu-close"
-              ></use>
+            <svg width="40px" height="40px" class="mobile-menu__icon" aria-label="Переключатель мобильного меню">
+              <use class="mobile-menu__open" href="./images/icons/sprite-optimized.svg#menu-open"></use>
+              <use class="mobile-menu__close" href="./images/icons/sprite-optimized.svg#menu-close"></use>
             </svg>
           </button>
 
@@ -54,9 +43,7 @@
                   <li class="nav__item">
                     <a href="./index.html" class="nav__link nav__link--current">Студия</a>
                   </li>
-                  <li class="nav__item">
-                    <a href="./portfolio.html" class="nav__link">Портфолио</a>
-                  </li>
+                  <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
                   <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                 </ul>
               </nav>
@@ -70,33 +57,23 @@
                     </a>
                   </li>
                   <li class="contacts__item contacts__item--blue">
-                    <a href="tel:+380961111111" class="contacts__link contacts__link--blue"
-                      >+38 096 111 11 11</a
-                    >
+                    <a href="tel:+380961111111" class="contacts__link contacts__link--blue">+38 096 111 11 11</a>
                   </li>
                 </ul>
               </div>
               <div class="mobile-menu__socials">
                 <ul class="mobile-menu__list list">
                   <li class="mobile-menu__social">
-                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link"
-                      >Instagram</a
-                    >
+                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link">Instagram</a>
                   </li>
                   <li class="mobile-menu__social">
-                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link"
-                      >Twitter</a
-                    >
+                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link">Twitter</a>
                   </li>
                   <li class="mobile-menu__social">
-                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link"
-                      >Facebook</a
-                    >
+                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link">Facebook</a>
                   </li>
                   <li class="mobile-menu__social">
-                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link"
-                      >LinkedIn</a
-                    >
+                    <a href="" target="_blank" rel="noreferrer noopener" class="mobile-menu__link">LinkedIn</a>
                   </li>
                 </ul>
               </div>
@@ -116,9 +93,7 @@
                 <li class="nav__item">
                   <a href="./index.html" class="nav__link nav__link--current">Студия</a>
                 </li>
-                <li class="nav__item">
-                  <a href="./portfolio.html" class="nav__link">Портфолио</a>
-                </li>
+                <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
               </ul>
             </nav>
@@ -150,19 +125,20 @@
       <section class="hero">
         <div class="hero__container">
           <h1 class="hero__heading">
-            Эффективные решения <br />
+            Эффективные решения
+            <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="modal__button" data-modal-close>
               <svg class="modal__icon">
-                <use href="./images/icons/sprite-optimized.svg#cross"></use>
+                <use href="./images/icons/sprite-optimized.svg#close-buton"></use>
               </svg>
             </button>
-            <div class="form js-speaker-form">
+            <form class="form js-speaker-form">
               <h2 class="form__heading">Оставьте свои данные, мы вам перезвоним</h2>
               <div class="form__field">
                 <label class="form__label">
@@ -200,11 +176,9 @@
               <div class="form__field">
                 <label class="form__label">
                   Комментарий
-                  <textarea
-                    name="comment"
-                    class="form__comment"
-                    placeholder="Введите текст"
-                  ></textarea>
+                  <div class="form__container">
+                    <textarea name="comment" class="form__comment" placeholder="Введите текст"></textarea>
+                  </div>
                 </label>
               </div>
               <div class="form__field">
@@ -217,7 +191,7 @@
               </div>
 
               <button type="submit" class="button form__button">Отправить</button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
@@ -227,7 +201,7 @@
           <ul class="features__list list">
             <li class="features__item">
               <div class="features__container">
-                <svg class="features__icon">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons/sprite-optimized.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -238,7 +212,7 @@
             </li>
             <li class="features__item">
               <div class="features__container">
-                <svg class="features__icon">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons/sprite-optimized.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -249,7 +223,7 @@
             </li>
             <li class="features__item">
               <div class="features__container">
-                <svg class="features__icon">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons/sprite-optimized.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -260,14 +234,12 @@
             </li>
             <li class="features__item">
               <div class="features__container">
-                <svg class="features__icon">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons/sprite-optimized.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="features__headings">Современные технологии</h3>
-              <p class="features__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
+              <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -279,7 +251,7 @@
             <li>
               <div class="activity__thumb">
                 <img
-                  src="./images/img_4.jpg"
+                  src="./images/desktop/img_4.jpg"
                   alt="руки на клавиатуре набирают текст"
                   width="370"
                   height="294"
@@ -291,12 +263,7 @@
             </li>
             <li>
               <div class="activity__thumb">
-                <img
-                  src="./images/img-1.jpg"
-                  alt="человек с телефоном в руках"
-                  width="370"
-                  height="294"
-                />
+                <img src="./images/desktop/img-1.jpg" alt="человек с телефоном в руках" width="370" height="294" />
                 <div class="activity__name">
                   <p class="activity__text">Мобильные приложения</p>
                 </div>
@@ -305,7 +272,7 @@
             <li>
               <div class="activity__thumb">
                 <img
-                  src="./images/img-2.jpg"
+                  src="./images/desktop/img-2.jpg"
                   alt="планшет с палитрой цветов на выбор"
                   width="370"
                   height="294"
@@ -638,9 +605,10 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="address-container">
-          <a href="./index.html" class="footer__logo"
-            ><span class="logo logo--accent">Web</span>Studio</a
-          >
+          <a href="./index.html" class="footer__logo">
+            <span class="logo logo--accent">Web</span>
+            Studio
+          </a>
           <address class="footer__address">
             <ul class="list">
               <li class="footer__address footer__address--physical">
@@ -649,109 +617,90 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="footer__link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
                 >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
               </li>
               <li class="footer__mail">
-                <a href="mailto:info@example.com" class="footer__link footer__contact"
-                  >info@example.com</a
-                >
+                <a href="mailto:info@example.com" class="footer__link footer__contact">info@example.com</a>
               </li>
-              <li>
-                <a href="tel:+380991111111" class="footer__link footer__contact"
-                  >+38 099 111 11 11</a
-                >
-              </li>
+              <li><a href="tel:+380991111111" class="footer__link footer__contact">+38 099 111 11 11</a></li>
             </ul>
           </address>
         </div>
-        <div class="footer__call">
-          <div class="footer__join">
-            <h2 class="footer__text">Присоединяйтесь</h2>
-            <ul class="social-media__icons social-media__icons--footer list">
-              <li class="social-media__icon">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="social-media__link social-media__link--footer"
-                >
-                  <svg class="social-media__svg social-media__svg--white">
-                    <use href="./images/icons/sprite-optimized.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__icon">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="social-media__link social-media__link--footer"
-                >
-                  <svg class="social-media__svg social-media__svg--white">
-                    <use href="./images/icons/sprite-optimized.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__icon">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="social-media__link social-media__link--footer"
-                >
-                  <svg class="social-media__svg social-media__svg--white">
-                    <use href="./images/icons/sprite-optimized.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__icon">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="social-media__link social-media__link--footer"
-                >
-                  <svg class="social-media__svg social-media__svg--white">
-                    <use href="./images/icons/sprite-optimized.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__subscribe">
-            <label for="subscribe" class="form__label">
-              <h2 class="footer__text">Подпишитесь на рассылку</h2>
-            </label>
-            <input
-              type="subscribe"
-              name="subscribe"
-              class="footer__input"
-              id="subscribe"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="button">
-              <p class="footer__button">Подписаться</p>
-              <span>
-                <svg class="footer__svg">
-                  <use href="./images/icons/sprite-optimized.svg#icon-send"></use>
+        <div class="footer__join">
+          <h2 class="footer__text">Присоединяйтесь</h2>
+          <ul class="social-media__icons social-media__icons--footer list">
+            <li class="social-media__icon">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="social-media__link social-media__link--footer"
+              >
+                <svg class="social-media__svg social-media__svg--white">
+                  <use href="./images/icons/sprite-optimized.svg#icon-instagram"></use>
                 </svg>
-              </span>
-            </button>
-          </div>
+              </a>
+            </li>
+            <li class="social-media__icon">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="social-media__link social-media__link--footer"
+              >
+                <svg class="social-media__svg social-media__svg--white">
+                  <use href="./images/icons/sprite-optimized.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__icon">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="social-media__link social-media__link--footer"
+              >
+                <svg class="social-media__svg social-media__svg--white">
+                  <use href="./images/icons/sprite-optimized.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__icon">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="social-media__link social-media__link--footer"
+              >
+                <svg class="social-media__svg social-media__svg--white">
+                  <use href="./images/icons/sprite-optimized.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subscribe">
+          <label for="subscribe" class="form__label">
+            <h2 class="footer__text">Подпишитесь на рассылку</h2>
+            <input type="email" name="subscribe" class="footer__input" id="subscribe" placeholder="E-mail" />
+          </label>
+
+          <button type="submit" class="button">
+            <p class="footer__button">Подписаться</p>
+            <span>
+              <svg class="footer__svg">
+                <use href="./images/icons/sprite-optimized.svg#icon-send"></use>
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script>
-      (() => {
-        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-        });
-      })();
-    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/speaker-form.js"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

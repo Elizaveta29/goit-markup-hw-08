@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 1px solid tomato;
 }
 
 body {
@@ -32,7 +33,6 @@ p {
 img {
   display: block;
   height: auto;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -43,13 +43,13 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
+  position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
 }
 

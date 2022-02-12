@@ -1,6 +1,4 @@
 .clients__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--background-color1);
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
@@ -15,6 +13,7 @@
 }
 
 .clients__item {
+  max-width: 290px;
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
 
@@ -31,7 +30,6 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
   height: 92px;
   border: 1px solid var(--bord-icon);
   color: var(--bord-icon);

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  />
+   <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__section">            
+          <a class="header__logo logo link"=./index.html" 
+            >Web<span class="header__logo--black">Studio</span></a>
+        <nav class="header__nav">
+        <ul class="nav list no-bullet">
+          <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
+          <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="header-contact header-contack__list no-bullet">
+        <li class="header-contact__item"><a href="mailto:info@devstudio.com" class="header-contact__link link"><svg class="header-contact__icon" width="16" height="12">
+          <use href="./images/icons.svg#icon-envelope"></use>
+        </svg>info@devstudio.com</a></li>
+        <li class="header-contact__item"><a href="tel:+380961111111" class="header-contact__link link"><svg class="header-contact__icon" width="10" height="16">
+          <use href="./images/icons.svg#icon-mobile"></use>
+        </svg>+38 096 111 11 11</a></li>
+      </ul>
+    </div>
+    
+    </header>
+
+    <main>
+      <section class = "portfolio">
+        <div class = "container">
+        <h1 class = "section-title visually-hidden">Портфолио</h1>
+        <ul class ="portfolio__buttons no-bullet">
+          <li class ="button__list"><button type="button" class="portfolio__button portfolio__button--active">Все</button></li>
+          <li class ="button__list"><button type="button" class="portfolio__button">Веб-сайты</button></li>
+          <li class ="button__list"><button type="button" class="portfolio__button">Приложения</button></li>
+          <li class ="button__list"><button type="button" class="portfolio__button">Дизайн</button></li>
+          <li class ="button__list"><button type="button" class="portfolio__button">Маркетинг</button></li>
+        </ul>
+
+        <ul class="portfolio-cards no-bullet">
+          <li class="portfolio-cards__item">   
+            <a class="portfolio-cards__link" href="">          
+           <div class = "portfolio-cards__description"> <img src="./images/laptop.jpg" alt="note-book" width="370" height="294" />
+            <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+</div>
+            <div class="portfolio-name">
+            <h2 class="portfolio-name__heading">Технокряк</h2>
+            <p class="portfolio-name__descr">Веб-сайт</p> 
+          </div>
+          </a>
+          </li>
+
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"><img src="./images/players.jpg" alt="players" width="370" height="294" />
+              <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+            </div>
+            <div class="portfolio-name">
+            <h2 class="portfolio-name__heading">Постер New Orlean vs Golden Star</h2>
+            <p class="portfolio-name__descr">Дизайн</p>
+          </div>
+          </a>
+          </li>
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"> <img src="./images/seafood.jpg" alt="logo restoran" width="370" height="294" />
+              <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+            </div>
+            <div class="portfolio-name">
+            <h2 class="portfolio-name__heading">Ресторан Seafood</h2>
+            <p class="portfolio-name__descr">Приложение</p>
+          </div>
+          </a>
+          </li>
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"><img src="./images/headphones.jpg" alt="Headphones" width="370" height="294" />
+              <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+            </div>
+            <div class="portfolio-name">
+            <h2 class="portfolio-name__heading">Проект Prime</h2>
+            <p class="portfolio-name__descr">Маркетинг</p>
+          </div>
+          </a>
+          </li>
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"><img src="./images/blocks.jpg" alt="two blocks" width="370" height="294" />
+              <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+            </div>
+            <div class="portfolio-name">
+            <h2 class="portfolio-name__heading">Проект Boxes</h2>
+            <p class="portfolio-name__descr">Приложение</p>
+          </div>
+          </a>
+          </li>
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"><img src="./images/decktop.jpg" alt="Desctop" width="370" height="294" />
+              <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+            </div>
+            <div class="portfolio-name">
+            <h2 lang="en" class="portfolio-name__heading">Inspiration has no Borders</h2>
+            <p class="portfolio-name__descr">Веб-сайт</p></div>
+            </a>
+          </li>
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"><img src="./images/magazine.jpg" alt="page magazine" width="370" height="294" />
+              <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+            </div>
+            <div class="portfolio-name">
+            <h2 class="portfolio-name__heading">Издание Limited Edition</h2>
+            <p class="portfolio-name__descr">Дизайн</p></div>
+            </a>
+          </li>
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"><img src="./images/tag.jpg" alt="Medal" width="370" height="294" />           
+            <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+            </div>
+            <div class="portfolio-name">
+            <h2 class="portfolio-name__heading">Проект LAB</h2>
+            <p class="portfolio-name__descr">Маркетинг</p>
+            </div>
+            </a>
+          </li>
+          <li class="portfolio-cards__item">
+            <a class="portfolio-cards__link" href="">
+            <div class = "portfolio-cards__description"><img src="./images/laptop_hands.jpg" alt="hands on the keybords" width="370" height="294"/>
+            
+            <p class="portfolio-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem, recusandae earum porro expedita accusantium blanditiis molestias dignissimos quia ipsum doloremque veniam! Perferendis illo mollitia necessitatibus vero. Nihil, molestias soluta?</p>
+          </div>
+            <div class="portfolio-name">
+            <h2 lang="en" class="portfolio-name__heading">Growing Business</h2>
+            <p class="portfolio-name__descr">Приложение</p></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <div class="footer__contact">
+      <a class="footer__logo logo link" href="./index.html"
+      >Web<span class="footer__logo--white">Studio</span></a
+    >
+<address class="footer-contact">
+        <ul class="no-bullet footer-contact__list">
+          <li class="footer-adress footer-contact__list">
+            <a
+              href="https://goo.gl/maps/FCQ5aKZxrLypP4Zz5"
+              class="footer-link footer-address"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              г.Киев пр-т Леси Украинки 26
+            </a>
+          </li>
+          <li class="footer-list">
+            <a href="mailto:info@example.com" class="footer-link footer-contacts"
+              >info@example.com</a
+            >
+          </li>
+          <li class="footer-list">
+            <a href="tel:+380991111111" class="footer-link footer-contacts">+38 099 111 11 11</a>
+          </li>
+        </ul>
+      </address>    
+    </div>    
+   
+    <div class ="social-footer">
+      <p class ="social-footer__text">Присоединяйтесь</p>
+      <ul class = "social-footer__list"> 
+      <li class="social-footer__item"><a class="social-footer__link" href=""> <svg class="social-footer__icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-instagram"></use>
+      </svg>
+    </a> 
+      </svg>
+    </a>
+  </li>
+  <li class="social-footer__item"><a class="social-footer__link" href="">
+    <svg class="social-footer__icon" width="20" height="20">
+   <use href="./images/icons.svg#icon-twitter"></use>
+ </svg>
+</a>
+</li>
+<li class="social-foter__item"><a class="social-footer__link" href=""> 
+  <svg class="social-footer__icon" width="20" height="20">
+  <use href="./images/icons.svg#icon-facebook"></use>
+</svg>
+</a>
+</li>      
+<li class="social-foter__item"><a class="social-footer__link" href=""> 
+  <svg class="social-footer__icon" width="20" height="20">
+  <use href="./images/icons.svg#icon-linkedin"></use>
+</svg>
+</a>
+</li>    
+</ul>
+      </div>
+      <div class="footer-submit">
+        <p class="footer-submit__text">Подпишитесь на рассылку</p>
+        <div class="footer-submit__form">
+          <label class="footer-submit__label" for="submit-mail"></label>
+          <input class="footer-submit__input" type="email" name="submit-mail" id="submit-mail" placeholder="E-mail">
+          <button class="footer-submit__btn" type="submit">Подписаться</button>
+        </div>
+    </div>
+  </div>
+    </footer> 
+   </body>
+</html>

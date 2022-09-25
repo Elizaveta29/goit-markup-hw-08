@@ -1,0 +1,90 @@
+/* default settings */
+
+
+
+
+
+/* general settings */
+
+/*resset*/ 
+
+
+  /* outline: 2px solid red; */
+
+
+
+
+
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+
+
+
+
+
+
+/* hovers and accents */
+.nav,
+.nav__link:hover,
+.header-link:hover,
+.header-link:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-cl);
+}
+
+
+
+
+
+/* footer settings */
+
+
+/* body settings*/
+
+/* 2-lvl headings */
+
+/* .section-title {
+  text-align: center;
+  color: var(--add
+
+  margin-bottom: 50px;   
+  font-size: 36px;
+  line-height: 1.16;-cl);
+}
+ */
+/* hero home page */
+
+/* features section home page */
+
+
+
+/* secton activity */
+
+
+
+/* our team section home page */
+
+
+
+
+/* client section */
+
+
+
+/* portfolio page body*/
+
+
+
+  
+
+
+
+/* form */
+
+

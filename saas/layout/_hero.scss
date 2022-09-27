@@ -1,9 +1,47 @@
 .hero {
+  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-mobile2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-tablet.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-tablet2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-desctop.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-desctop2x.jpg');
+    }
+  }
+
   background-color: var(--background-dark);
   background-repeat: no-repeat;
   background-position: center;
@@ -12,26 +50,19 @@
   text-align: center;
   color: var(--white-cl);
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  // @media screen and (min-width: 480px) and (max-with: 767px) {
+  //   width: 480px;
+  //   height: 400px;
+  //   padding-top: 118px;
+  //   padding-bottom: 118px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 100%;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  // @media screen and (min-width: 768px) and (max-with: 1199px) {
+  //   width: 1200px;
+  //   height: 400px;
+  //   padding-top: 118px;
+  //   padding-bottom: 118px;
+  // }
 }
 
 .hero__title {

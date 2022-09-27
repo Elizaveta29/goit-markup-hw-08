@@ -865,7 +865,7 @@ a {
   display: flex;
   grid-gap: 30px;
 }
-@media screen and (min-width: 320px) and (max-width: 439px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .client__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1245,6 +1245,15 @@ a {
   display: flex;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio__buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (min-width: 480px) {
   .portfolio__buttons {
     -ms-flex-wrap: wrap;
@@ -1290,6 +1299,12 @@ a {
 @media screen and (min-width: 480px) {
   .portfolio__button {
     margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio__button {
+    margin-bottom: 15px;
+    margin-left: 10px;
   }
 }
 .portfolio__button:hover, .portfolio__button:focus {

@@ -28,6 +28,11 @@
   display: flex;
   grid-gap: 30px;
 
+  @media screen and (min-width: 320px) and (max-width: 439px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }

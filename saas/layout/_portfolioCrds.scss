@@ -1,10 +1,18 @@
 .portfolio-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px 30px;
+  align-items: stretch;
 
-.portfolio-cards__item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    grid-template-columns: auto;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: auto auto;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: auto auto auto;
+  }
 }
 
 .portfolio-cards__item {
